@@ -7,11 +7,10 @@ const App = () => {
   const [searchQuery, setSearchQuery] = useState('')
   const [image, setImage] = useState('')
   const [title, setTitle] = useState('')
+  const base_url = 'https://collectionapi.metmuseum.org/public/collection/v1/'
 
   const fetchData = async e => {
     e.preventDefault()
-
-    const base_url = 'https://collectionapi.metmuseum.org/public/collection/v1/'
 
     try {
       setLoading(true)
